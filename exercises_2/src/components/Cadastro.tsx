@@ -15,16 +15,17 @@ function Cadastro() {
 
   useEffect(() => {
     const nomeStorage = localStorage.getItem('nomeUsuario');
-    if (nomeStorage) {
+    
+    if (nomeStorage && nomeStorage !== 'null') {
       setNomeSalvo(nomeStorage);
     } else {
-      const nomePrompt = prompt('Qual é o seu nome?');
-      if (nomePrompt) {
+      const nomePrompt = prompt('Qual é o seu nome?') || '';
+      if (nomePrompt.trim() !== '') {
         localStorage.setItem('nomeUsuario', nomePrompt);
         setNomeSalvo(nomePrompt);
       }
     }
-  }, []);
+  }, []);  
 
   function handleRegistro(e: React.FormEvent) {
     e.preventDefault();
