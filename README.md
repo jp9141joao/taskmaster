@@ -17,19 +17,20 @@ Este projeto é uma aplicação simples de Front-End desenvolvida com React e Ty
 ## Estrutura do Projeto
 
 ```
-/src
-│── /assets
-│   ├── screenshot-1.png
-│   ├── screenshot-2.png
-│── /components
-│   ├── Cadastro.tsx
-│   ├── Tarefas.tsx
-│── /styles
-│   ├── global.css
-│── App.tsx
-│── main.tsx
-│── index.html
-│── tsconfig.json
+/exercises_2
+│── /src
+    │── /assets
+    │   ├── screenshot-1.png
+    │   ├── screenshot-2.png
+    │── /components
+    │   ├── Cadastro.tsx
+    │   ├── Tarefas.tsx
+    │── /styles
+    │   ├── global.css
+    │── App.tsx
+    │── main.tsx
+    │── index.html
+    │── tsconfig.json
 ```
 
 - **/assets**: Contém as imagens de captura de tela (screenshot-1.png e screenshot-2.png) demonstrando a aplicação.
@@ -57,8 +58,9 @@ A seguir, veja algumas capturas de tela da aplicação:
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://seu-repositorio.git
-   cd nome-do-projeto
+   git clone https://github.com/jp9141joao/exercises-2-react
+   cd exercises-2-react
+   cd exercises_2
    ```
 
 2. **Instale as dependências:**
