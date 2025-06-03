@@ -1,5 +1,4 @@
-# TaskMaster - Front-End Project with React and TypeScript
-
+# TaskMaster
 This project is a simple Front-End application developed with React and TypeScript. The goal of the project is to practice the use of Hooks (such as `useState` and `useEffect`), form handling, state management, and the use of `localStorage` to persist data. The application consists of two main components: user registration and task registration.
 
 ## Features
@@ -25,8 +24,8 @@ This project is a simple Front-End application developed with React and TypeScri
     │   ├── screenshot-1.png
     │   ├── screenshot-2.png
     │── /components
-    │   ├── Cadastro.tsx
-    │   ├── Tarefas.tsx
+    │   ├── Register.tsx
+    │   ├── Tasks.tsx
     │── /styles
     │   ├── global.css
     │── App.tsx
