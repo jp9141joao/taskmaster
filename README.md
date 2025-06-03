@@ -1,20 +1,22 @@
-# Projeto Front-End com React e TypeScript
+# TaskMaster - Front-End Project with React and TypeScript
 
-Este projeto é uma aplicação simples de Front-End desenvolvida com React e TypeScript. O objetivo do projeto é praticar o uso de Hooks (como `useState` e `useEffect`), manipulação de formulários, gerenciamento de estado e utilização do `localStorage` para persistir dados. A aplicação consiste em dois componentes principais: cadastro de usuário e cadastro de tarefas.
+This project is a simple Front-End application developed with React and TypeScript. The goal of the project is to practice the use of Hooks (such as `useState` and `useEffect`), form handling, state management, and the use of `localStorage` to persist data. The application consists of two main components: user registration and task registration.
 
-## Funcionalidades
+## Features
 
-- **Cadastro de Usuário**:  
-  - Exibe um prompt para que o usuário informe seu nome.
-  - Armazena o nome no `localStorage` para que seja mantido mesmo após atualizar a página.
-  - Permite cadastrar e exibir informações como nome, e-mail e idade.
+* **User Registration:**
 
-- **Cadastro de Tarefas**:  
-  - Permite adicionar tarefas a uma lista.
-  - Exibe a lista de tarefas cadastradas utilizando a função `map`.
-  - Persiste as tarefas no `localStorage`, evitando a perda de dados em atualizações.
+  * Displays a prompt for the user to enter their name.
+  * Stores the name in `localStorage` to persist it even after the page is refreshed.
+  * Allows registration and display of information such as name, email, and age.
 
-## Estrutura do Projeto
+* **Task Registration:**
+
+  * Allows adding tasks to a list.
+  * Displays the list of registered tasks using the `map` function.
+  * Persists tasks in `localStorage`, preventing data loss on refresh.
+
+## Project Structure
 
 ```
 /exercises_2
@@ -33,48 +35,51 @@ Este projeto é uma aplicação simples de Front-End desenvolvida com React e Ty
     │── tsconfig.json
 ```
 
-- **/assets**: Contém as imagens de captura de tela (screenshot-1.png e screenshot-2.png) demonstrando a aplicação.
-- **/components**: Contém os componentes principais (`Cadastro.tsx` e `Tarefas.tsx`).
-- **/styles**: Contém o arquivo `global.css` com estilos globais para a aplicação.
-- **App.tsx**: Componente raiz que integra os componentes de Cadastro e Tarefas.
-- **main.tsx**: Ponto de entrada da aplicação onde o React renderiza o App.
-- **index.html**: Arquivo HTML principal que abriga a aplicação.
-- **tsconfig.json**: Configuração do compilador TypeScript.
+* **/assets**: Contains screenshot images (`screenshot-1.png` and `screenshot-2.png`) showing the application.
+* **/components**: Contains the main components (`Cadastro.tsx` and `Tarefas.tsx`).
+* **/styles**: Contains the `global.css` file with global styles for the application.
+* **App.tsx**: Root component that integrates the Registration and Tasks components.
+* **main.tsx**: Entry point of the application where React renders the App.
+* **index.html**: Main HTML file that hosts the application.
+* **tsconfig.json**: TypeScript compiler configuration.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **React**: Biblioteca para construção de interfaces de usuário.
-- **TypeScript**: Superset do JavaScript com tipagem estática.
-- **Hooks**: Uso de `useState` e `useEffect` para gerenciamento de estado e efeitos colaterais.
-- **localStorage**: API do navegador utilizada para persistência de dados.
+* **React**: Library for building user interfaces.
+* **TypeScript**: JavaScript superset with static typing.
+* **Hooks**: Use of `useState` and `useEffect` for state management and side effects.
+* **localStorage**: Browser API used for data persistence.
 
 ## Screenshots
 
-A seguir, veja algumas capturas de tela da aplicação:
+Below are some screenshots of the application:
 ![Screenshot 1](./exercises_2/src/assets/screenshot-1.png)
 ![Screenshot 2](./exercises_2/src/assets/screenshot-2.png)
 
-## Como Executar o Projeto
+## How to Run the Project
 
-1. **Clone o repositório:**
+1. **Clone the repository:**
+
    ```bash
-   git clone https://github.com/jp9141joao/exercises-2-react
-   cd exercises-2-react
-   cd exercises_2
+   git clone https://github.com/jp9141joao/taskmaster.git
+   cd taskmaster-react
+   cd taskmaster
    ```
 
-2. **Instale as dependências:**
+2. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
-3. **Execute a aplicação:**
+3. **Run the application:**
+
    ```bash
    npm start
    ```
-   A aplicação será iniciada e poderá ser acessada em [http://localhost:3000](http://localhost:3000).
 
-## Considerações Finais
+   The app will start and can be accessed at [http://localhost:3000](http://localhost:3000).
 
-Este projeto foi desenvolvido para demonstrar conceitos básicos de React com TypeScript, incluindo manipulação de formulários, gerenciamento de estado com Hooks e persistência de dados com `localStorage`. Ele pode servir como base para projetos mais complexos e para o aprendizado de boas práticas no desenvolvimento de aplicações front-end.
----
+## Final Considerations
+
+This project, named **TaskMaster**, was developed to demonstrate basic React concepts with TypeScript, including form handling, state management with Hooks, and data persistence using `localStorage`. It can serve as a foundation for more complex projects and for learning best practices in front-end development.

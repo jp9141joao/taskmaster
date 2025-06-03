@@ -1,0 +1,80 @@
+/* Root element settings - applies to the whole document */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; /* Sets default font stack */
+  line-height: 1.5; /* Controls vertical spacing between lines */
+  font-weight: 400; /* Normal font weight */
+
+  color-scheme: light dark; /* Enables support for both light and dark themes */
+  color: rgba(255, 255, 255, 0.87); /* Default text color */
+  background-color: #242424; /* Default background color (dark theme) */
+
+  font-synthesis: none; /* Disables automatic font styling */
+  text-rendering: optimizeLegibility; /* Improves text readability */
+  -webkit-font-smoothing: antialiased; /* Smoother text on WebKit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Smoother text on macOS Firefox */
+}
+
+/* Anchor (<a>) tag default styles */
+a {
+  font-weight: 500; /* Slightly bold text */
+  color: #646cff; /* Default link color */
+  text-decoration: inherit; /* Inherits underline or other decorations */
+}
+
+/* Anchor hover state */
+a:hover {
+  color: #535bf2; /* Link color when hovered */
+}
+
+/* Body element styles */
+body {
+  margin: 0; /* Removes default margin */
+  display: flex; /* Enables flex layout */
+  place-items: center; /* Centers content both horizontally and vertically */
+  min-width: 320px; /* Sets a minimum width for small screens */
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Heading 1 styles */
+h1 {
+  font-size: 3.2em; /* Larger heading text */
+  line-height: 1.1; /* Tight line spacing */
+}
+
+/* Button default styles */
+button {
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid transparent; /* Invisible border by default */
+  padding: 0.6em 1.2em; /* Padding around text */
+  font-size: 1em; /* Default font size */
+  font-weight: 500; /* Semi-bold text */
+  font-family: inherit; /* Inherits the font from its parent */
+  background-color: #1a1a1a; /* Dark background */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: border-color 0.25s; /* Smooth border color transition on hover */
+}
+
+/* Button hover state */
+button:hover {
+  border-color: #646cff; /* Changes border color on hover */
+}
+
+/* Button focus styles for accessibility */
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color; /* Shows an outline when focused */
+}
+
+/* Light theme overrides (for systems set to light mode) */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547; /* Text color for light theme */
+    background-color: #ffffff; /* Light background */
+  }
+  a:hover {
+    color: #747bff; /* Link hover color in light theme */
+  }
+  button {
+    background-color: #f9f9f9; /* Light button background */
+  }
+}
